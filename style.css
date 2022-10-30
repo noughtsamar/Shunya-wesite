@@ -154,7 +154,7 @@ body {
   transform: rotateY(0deg);
 }
 
-.button {
+.button a {
   transform: translateZ(40px);
   cursor: pointer;
   -webkit-backface-visibility: hidden;
