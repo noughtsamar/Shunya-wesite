@@ -154,7 +154,7 @@ body {
   transform: rotateY(0deg);
 }
 
-.button a {
+.button {
   transform: translateZ(40px);
   cursor: pointer;
   -webkit-backface-visibility: hidden;
@@ -165,6 +165,7 @@ body {
   border-radius: 100px;
   font: inherit;
   border: none;
+  margin: 2rem;
   position: relative;
   transform-style: preserve-3d;
   transition: 300ms ease;
