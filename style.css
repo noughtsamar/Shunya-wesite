@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
  .card__collection {
 	 position: relative;
 	 display: grid;
-	 grid-template-columns: 1fr 1fr 1fr 1fr;
+	 grid-template-columns: 0.9fr 0.9fr 0.9fr 0.9fr;
 	 padding: 10px;
 	 font-family: 'Do Hyeon', sans-serif;
 	 overflow: hidden;
@@ -159,7 +159,7 @@ body::-webkit-scrollbar {
 	 position: absolute;
 	 display: block;
 	 top: 0;
-	 right: -100%;
+	 right: -120%;
 	 transition: all 0.3s ease-in-out;
 }
  .card__collection .cards--two__tri:before {
