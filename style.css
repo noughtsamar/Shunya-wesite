@@ -6,7 +6,7 @@ body {
 	background: #001322;
 	font-weight: 400;
 	font-size: 1em;
-	font-family: 'Raleway', Arial, sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
 
@@ -24,7 +24,8 @@ section {
 
 .codrops-header h1 {
 	margin: 0;
-	font-weight: 800;
+	font-family: 'Inter', sans-serif;
+	/* font-weight: 800; */
 	font-size: 3em;
 	line-height: 1.3;
 	color: #fff;
@@ -81,16 +82,23 @@ section {
 }
 
 .grid {
+	/* display: grid; */
 	overflow: hidden;
 	margin: 0;
 	padding: 1em 0 0 0;
 	width: 100%;
 	list-style: none;
 	text-align: center;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	
+
+	/* grid-template-columns: repeat(3, 40vw); */
 }
 
 /* Common style */
 .grid figure {
+	flex: 1;
 	position: relative;
 	z-index: 1;
 	display: inline-block;
@@ -100,17 +108,18 @@ section {
 	height: 400px;
 	text-align: center;
 	cursor: pointer;
+	border-radius: 5%;
+	box-shadow: 0 1px 10px 1px #203544;
 }
 
 .grid figure img {
 	position: relative;
 	display: block;
 	min-height: 100%;
-	opacity: 0.8;
+	opacity: 0.7;
 }
-
 .grid figure figcaption {
-	padding: 2em;
+	padding: 1em;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
@@ -138,7 +147,7 @@ section {
 .grid figure h2 {
 	word-spacing: 5px;
 	font-size: 23px;
-	font-weight: 300;
+	font-weight: 100;
 }
 
 
@@ -148,10 +157,9 @@ section {
 }
 
 .grid figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
+	letter-spacing: 2px;
+	font-size: 90%;
 }
-
 
 
 /*---------------*/
@@ -162,11 +170,10 @@ figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
 	padding: 1em;
-	height: 3.75em;
-	background: yellow;
-	width: 400px;
-	border-radius: 0 0 5px 5px;
-	color: black;
+	height: 3.25em;
+	background: #0ea5e9;
+	width: 350px;
+	color: rgb(255, 255, 255);
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
@@ -178,8 +185,7 @@ figure.effect-zoe figcaption {
 	position: relative; 
 	left: -10px; 
 	top: 5px;
-	color: black;
-	opacity: 1;
+	color: rgb(255, 255, 255);
 }
 
 .effect-zoe figcaption a i:hover {
@@ -278,8 +284,9 @@ figure.effect-zoe:hover figcaption > span:nth-child(2) {
 img {
 	width: 400px;
 	height: 100px;
-	border-radius: 5px;
+	
 }
+
 
 /* footer section start */
 
@@ -343,6 +350,126 @@ footer {
 	color: black;
 	transition: 0.4s ease;
   }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 0px) and (max-width: 580px) {
+
+	/* .grid figure{
+		max-width: 100px;
+	} */
+
+	/* .grid{
+		max-width: 350px;
+	}
+	.grid figure{
+		max-width: 350px;
+	} */
+	 footer {
+        width: 100vw-50px;
+        padding: 20px 25px 10px;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo2 {
+        height: 70px;
+        width: 70px;
+        margin: 20px 0px;
+        order: -1;
+    }
+
+    .footer-logo1 {
+        height: 37.38px;
+        width: 119.7px;
+        order: -1;
+    }
+
+    .footer-icon {
+        font-size: 18px;
+    }
+
+    .footerlink {
+        font-size: 15px;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 11px;
+    }
+}
   
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 580px) and (max-width: 768px) {
+	/*footer*/
+    footer {
+        width: 100vw-50px;
+        padding: 20px 25px 10px;
+    }
+
+    .footer-logo2 {
+        height: 80px;
+        width: 80px;
+        margin: 20px 0 20px 54.68px;
+    }
+
+    .footer-logo1 {
+        height: 42.06px;
+        width: 134.68px;
+    }
+
+    .footer-social {
+        margin: 20px 10px 20px;
+    }
+
+    .footer-icon {
+        font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 9px;
+    }
+
+    .footerlink {
+        font-size: 13px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+  footer {
+        width: 100vw-100px;
+        padding: 20px 50px 10px;
+    }
+
+    .footer-logo2 {
+        height: 100px;
+        width: 100px;
+        margin: 20px 0 20px 65.8px;
+    }
+
+    .footer-logo1 {
+        height: 51.76px;
+        width: 165.8px;
+    }
+
+    .footer-icon {
+        font-size: 22px;
+    }
+
+    .footer-text {
+        font-size: 9px;
+    }
+
+    .footerlink {
+        font-size: 15px;
+    }
+}
   
   /* footer section end */
+
+  
