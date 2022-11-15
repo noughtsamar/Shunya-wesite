@@ -179,6 +179,7 @@ figure.effect-zoe figcaption {
 	left: -10px; 
 	top: 5px;
 	color: black;
+	opacity: 1;
 }
 
 .effect-zoe figcaption a i:hover {
