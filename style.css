@@ -165,6 +165,7 @@ figure.effect-zoe figcaption {
 	height: 3.75em;
 	background: yellow;
 	width: 400px;
+	border-radius: 0 0 5px 5px;
 	color: black;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -276,6 +277,7 @@ figure.effect-zoe:hover figcaption > span:nth-child(2) {
 img {
 	width: 400px;
 	height: 100px;
+	border-radius: 5px;
 }
 
 /* footer section start */
